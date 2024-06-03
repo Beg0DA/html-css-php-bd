@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+    width: auto;
+}
+
+body {
+    background-color: rgb(35, 49, 67);
+    color: rgb(246, 248, 251);
+}
+
+@font-face {
+    font-family: 'Stengazeta';
+    src: url('../font/Stengazeta-Regular_5.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../font/Lora-Bold.ttf') format('truetype'),
+        url('../font/Lora-BoldItalic.ttf') format('truetype'),
+        url('../font/Lora-Italic.ttf') format('truetype'),
+        url('../font/Lora-Medium.ttf') format('truetype'),
+        url('../font/Lora-MediumItalic.ttf') format('truetype'),
+        url('../font/Lora-Regular.ttf') format('truetype'),
+        url('../font/Lora-SemiBold.ttf') format('truetype'),
+        url('../font/Lora-SemiBoldItalic.ttf') format('truetype'),
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(20, 31, 41);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.item {
+    width: 18%;
+    height: 25%;
+    border: solid 2px rgb(70, 194, 237);
+    border-radius: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(20, 31, 41);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-img {
+    width: 65%;
+    height: 50%;
+    margin-left: 17%;
+    margin-top: 5%;
+}
+
+.start {
+    margin-top: 0.5%;
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(246, 248, 251);
+    font-family: 'Stengazeta';
+    background-color: rgb(20, 31, 41);
+}
+
+p {
+    padding-top: 2%;
+    margin-left: 4%;
+    text-align: left;
+}
+
+h4 {
+    margin-top: 2%;
+    font-size: 26px;
+    color: rgb(246, 248, 251);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 194, 237);
+    text-decoration: underline;
+}
+
+.name {
+    font-size: 19px;
+}
+
+.link {
+    width: auto;
+}
+
+footer {
+    margin-top: 3%;
+}
+
+.log {
+    background-color: rgb(20, 31, 41);
+}
+
+.container {
+    margin: auto;
+    width: 35%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(20, 31, 41);
+    border: solid 2px rgb(70, 194, 237);
+}
+
+.login-text-up {
+    font-size: 26px;
+    margin-left: 0%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: rgb(35, 49, 67);
+    border-radius: 10px;
+    color: rgb(246, 248, 251);
+    font-size: 18px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background-color: rgba(35, 49, 67,0.5);
+    outline: none;
+}
+
+.registerbtn {
+    background-color: rgb(70, 194, 237);
+    color: rgb(246, 248, 251);
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+    font-size: 24px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+label {
+    font-size: 18px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: rgb(70, 194, 237);
+    color: rgb(246, 248, 251);
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img {
+    width: 70%;
+}
+
+.user {
+    text-decoration: none;
+}
+
+.username {
+    font-size: 22px;
+}
+
+.title {
+    font-size: 1.1em;
+}
+
+.book {
+    text-align: center;
+}
+
+.img1{
+    height: 40%; 
+    width:20%;
+}
+@media screen and (width<450px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 70%;
+        height: 45%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .start {
+        font-size: 24px;
+        margin-top: 1%;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .dropbtn {
+        padding: 4px 8px 4px 8px;
+        font-size: 12px;
+    }
+
+    header {
+        height: 40px;
+    }
+    .dropdown{
+        margin-left: 10%;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    .title{
+        font-size: 1em;
+    }
+    .img1{
+        width: 43%;
+    }
+    .book{
+        font-size: 14px;
+    }
+    .login-text-up{
+        font-size: 16px;
+    }
+    .container {
+        margin: auto;
+        width: 85%;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        width: 91%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    
+    .registerbtn {
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 10px;
+        opacity: 0.9;
+        font-size: 20px;
+    }
+    .name{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .logo{
+        width: 35px;
+        height: 35px;
+    }   
+}
